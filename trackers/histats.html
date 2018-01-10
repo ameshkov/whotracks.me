@@ -1,0 +1,630 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Tracker | Histats</title>
+    <meta name="description" content="Tracker profile of Histats. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- OG params for sharable content -->
+    <meta property="og:title" content="Tracker | Histats">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://whotracks.me/trackers/histats.html">
+    <meta property="og:description" content="Tracker profile of Histats. Reach, domains it operates under, tracking technology, web presence by type of site and more.">
+
+
+    <!-- Stylesheets -->
+    <link rel="icon" href="../static/img/favicon-2.ico">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/custom.css">
+    <link rel="stylesheet" href="../static/css/easy-autocomplete.min.css">
+ 
+    <!--add this block to templates that need extra styling-->
+    
+    <link rel="stylesheet" href="../static/css/trackers/profile.css">
+
+
+    <!-- jQuery -->
+    <script src="../static/js/jquery.min.js"></script>
+    <!-- Plotly JS -->
+    <script src="../static/js/plotly-v1.29.3.min.js"></script>
+    <!-- For relative path resolution -->
+    <script>
+        var pathToRoot = ".."
+    </script>       
+</head>
+
+<body>
+<nav class="navbar navbar-blue" role="navigation">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="..">
+                    <img class="logo" alt="Who Tracks Me" src="../static/img/logo-white.svg">
+                </a>
+                </div>
+            </div>
+
+            <div class="col-md-offset-1 col-md-9 col-sm-0">
+                <!--Collapsed under menu in mobile-->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul id="imaginary_container">
+                        <div class="input-group stylish-input-group">
+                            <input id="search-bar" class="form-control" type="text" placeholder="Search website or tracker">
+                        </div>
+                    </ul>
+                                <!--Site links-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li
+                             class="active" 
+                        >
+                            <a class="nav-button" href="../trackers.html">TRACKERS</a>
+                        </li>
+                        <li
+                            
+                        >
+                            <a class="nav-button" href="../websites.html">WEBSITES</a>
+                        </li>
+                        <li
+                            
+                        >
+                            <a class="nav-button" href="../blog.html">BLOG</a>
+                        </li>
+                    </ul>
+                    <!--Search bar-->
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>Histats</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var operates_under_selector = '#operates-under p',
+        $operates_under_list = $(operates_under_selector),
+        operates_list_size = $operates_under_list.length,
+        items_to_show = 2,
+        $expand = $('.operates-expand'),
+        $collapse = $('.operates-collapse');
+    $(operates_under_selector + ':lt(' +items_to_show+')').show();
+    $expand.click(function(e) {
+        items_to_show = operates_list_size;
+        $(operates_under_selector + ':lt('+items_to_show+')').show();
+        if(items_to_show === operates_list_size) {
+            $collapse.removeClass('hidden');
+            $expand.addClass('hidden');
+        }
+    });
+
+    $collapse.click(function() {
+        $(this).addClass('hidden');
+        $expand.removeClass('hidden');
+        $operates_under_list.not(':lt(2)').hide();
+    });
+
+});
+</script>
+<div id="tracker-page" class="overview-page">
+    <div id="overview-header">
+        <div class="container">
+            <div class="row overview-info inverse">
+                <div class="col-md-6 col-sm-6">
+  <h1>Histats</h1>
+  
+    <p class="header">Owned by Histats</p>
+  
+  
+    <p id="domain">
+        <a target="_blank" rel="noreferrer"  href="http://www.histats.com/">http://www.histats.com/</a>
+    </p>
+  
+</div>
+
+<div class="col-md-6 col-sm-6">
+  <div class="overview-info-right">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <p class="header">TRACKER RANK</p>
+        <p class="tracker-rank">
+          <span class="emphasis">303</span>
+          /600
+        </p>
+        <p class="description">Relatively prevalent</p>
+      </div>
+
+      <div class="col-md-6 col-sm-6">
+        
+          <p class="header">OPERATES UNDER</p>
+          <div id="operates-under">
+          
+            <p>
+              <a class="profile-label"
+                 target="_blank"
+                 rel="noreferrer"
+                 href="//histats.com"> histats.com
+              </a>
+            </p>
+          
+
+          
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="overview-header-box">
+  <div class="row">
+
+
+    <!-- LEFT COLUMN -->
+    <div class="col-md-6 col-sm-6">
+        <h3>TRACKER REACH</h3>
+        <div class="trend">
+          <img class="trackers-icon" src="../static/img/page.svg">
+          <span class="percentage">
+            0.2%
+            <span class="graph"><div id="c5efb5f8-8e38-4368-ba7e-ff744d076351" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("c5efb5f8-8e38-4368-ba7e-ff744d076351", [{"type": "scatter", "x": ["2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01"], "y": [0.20137799335245574, 0.17505248953074715, 0.15412949829640815, 0.15804450368268738, 0.16029085542017854, 0.1816166350443435, 0.18911478102479048, 0.21902250286145136], "text": ["0.20% on May 17", "0.18% on Jun 17", "0.15% on Jul 17", "0.16% on Aug 17", "0.16% on Sep 17", "0.18% on Oct 17", "0.19% on Nov 17", "0.22% on Dec 17"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "lines", "marker": {"size": 10}}, {"type": "scatter", "x": ["2017-12-01"], "y": [0.21902250286145136], "text": ["0.22% on Dec 17"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "markers", "marker": {"size": 10}}], {"showlegend": false, "margin": {"l": 10, "r": 10, "b": 40, "t": 30, "pad": 5}, "height": 100, "width": 153, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "#00000000", "font": {"family": "monospace", "size": 13, "color": "#BFCBD6"}}, "xaxis": {"autorange": true, "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "hoverformat": "%b %y", "ticks": "", "showticklabels": false}, "yaxis": {"range": [0.13871654846676734, 0.25187587829066904], "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "ticks": "", "showticklabels": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+
+          <p class="description">of web traffic is tracked by Histats</p>
+      </div>
+      <div class="trend">
+          <img class="trackers-icon" src="../static/img/domain.svg">
+          <span class="percentage">
+            0.5%
+            <span class="graph"><div id="b5f79d44-6487-48a7-ab59-6e335dfb2fd0" style="height: 100px; width: 153px;" class="plotly-graph-div"></div><script type="text/javascript">window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("b5f79d44-6487-48a7-ab59-6e335dfb2fd0", [{"type": "scatter", "x": ["2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01"], "y": [0.4992876598435017, 0.4698541484654788, 0.4498997392758073, 0.45719360221716937, 0.45498036055997587, 0.4548222127079134, 0.4437129183499312, 0.47708615181204733], "text": ["0.50% on May 17", "0.47% on Jun 17", "0.45% on Jul 17", "0.46% on Aug 17", "0.45% on Sep 17", "0.45% on Oct 17", "0.44% on Nov 17", "0.48% on Dec 17"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "lines", "marker": {"size": 10}}, {"type": "scatter", "x": ["2017-12-01"], "y": [0.47708615181204733], "text": ["0.48% on Dec 17"], "hoverinfo": "text", "line": {"color": "#A069AB", "width": 3, "dash": "solid"}, "opacity": 1, "mode": "markers", "marker": {"size": 10}}], {"showlegend": false, "margin": {"l": 10, "r": 10, "b": 40, "t": 30, "pad": 5}, "height": 100, "width": 153, "hoverlabel": {"bgcolor": "#1A1A25", "bordercolor": "#00000000", "font": {"family": "monospace", "size": 13, "color": "#BFCBD6"}}, "xaxis": {"autorange": true, "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "hoverformat": "%b %y", "ticks": "", "showticklabels": false}, "yaxis": {"range": [0.3993416265149381, 0.5242520428356768], "showgrid": false, "zeroline": false, "showline": false, "autotick": true, "ticks": "", "showticklabels": false}}, {"showLink": false, "linkText": "Export to plot.ly", "displayModeBar": false})</script></span>
+          </span>
+          <p class="description">of sites use the Histats tracker</p>
+      </div>
+      <p class="subtitle">There are about 1.8 Billion sites on the internet</p>
+    </div>
+
+
+    <!-- Right COLUMN -->
+    <div class="col-md-6 col-sm-6">
+          <h3>SEEN ON THESE TYPES OF WEBSITES</h3>
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">40% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="50.0" aria-valuemin="0" aria-valuemax="100" style="width: 50.0%">
+                Reference
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">20% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100" style="width: 25.0%">
+                News and Portals
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">20% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="25.0" aria-valuemin="0" aria-valuemax="100" style="width: 25.0%">
+                Entertainment
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">10% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="12.5" aria-valuemin="0" aria-valuemax="100" style="width: 12.5%">
+                Business
+                </div>
+              </div>
+            </div>
+            
+          
+          
+            <div class="clearfix">
+              <span class="progress-presence">10% </span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar"  aria-valuenow="12.5" aria-valuemin="0" aria-valuemax="100" style="width: 12.5%">
+                E-Commerce
+                </div>
+              </div>
+            </div>
+            
+          
+
+          <h3>TRACKING TYPE</h3>
+          <div class="row tracking-methods">
+            
+              <div  class="col-md-8" >
+                <img src="../static/img/cookies.svg">
+<p class="tracking-method">
+  <span class="highlight">COOKIES</span> are files placed by the website, stored in the browser
+  that is used to identify you to the website. <div>
+    <a class="learn-more" href="../blog/cookies.html">
+      Learn more
+      <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+  </div>
+</p>
+              </div>
+            
+
+            
+            
+          </div>
+    </div>
+  </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="similar-trackers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="row tracker-category">
+                        <div class="col-md-11">
+                        <h4>TRACKER CATEGORY</h4>
+                        
+                            <span class="cat-item">
+                                <i class="fa fa-circle" style="color: #BF90D2" aria-hidden="true"></i>
+                                Advertising
+                            </span>
+                            <p class="tracker-desc">Provides advertising or advertising-related services such as data collection, behavioral analysis or retargeting.</p>
+                        
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/tracker_categories.html">Learn about our tracker categories</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-info-circle"></i>
+                            <a href="../blog/what_is_a_tracker.html">What is a tracker?</a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6  col-sm-6 col-xs-12">
+                    <h4>SIMILAR TRACKERS</h4>
+                    <ul>
+                        
+                            <li>
+                                <a href="None" class="entity-name">
+                                Google
+                                </a>
+                                
+                                    <span>
+                                        Google
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="None" class="entity-name">
+                                DoubleClick
+                                </a>
+                                
+                                    <span>
+                                        Google
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="None" class="entity-name">
+                                Facebook
+                                </a>
+                                
+                                    <span>
+                                        Facebook
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="None" class="entity-name">
+                                Google AdServices
+                                </a>
+                                
+                                    <span>
+                                        Google
+                                    </span>
+                                
+                            </li>
+                        
+                            <li>
+                                <a href="None" class="entity-name">
+                                Google Syndication
+                                </a>
+                                
+                                    <span>
+                                        Google
+                                    </span>
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="tag-cloud">
+        <div class="container">
+            <div class="row">
+                <h2 class="title">Presence on top sites</h2>
+                
+                    <script src="../static/js/d3.min.js"></script>
+<script src="../static/js/d3.layout.cloud.js"></script>
+
+<script>
+        function sanitiseCategory(cat) {
+            return cat.replace(/\s/g, '_').toLowerCase();
+        }
+
+        function drawTagCloud(cat, siteList) {
+            var container = document.getElementById('tag_cloud_container');
+            var width = Math.max(container.offsetWidth, 300);
+            var height = Math.max(container.offsetHeight - 5, 400);
+            var containerSvg = document.getElementById('tag_cloud');
+            containerSvg.setAttribute('width', width);
+            containerSvg.setAttribute('height', height);
+
+            var sites = JSON.parse(siteList);
+            var minSize = 20;
+            var maxSize = 100;
+            var scaleFactor = (maxSize - minSize) / 0.3;
+
+            var layout = d3.layout.cloud()
+                .size([width, height])
+                .words(sites.map(function (d) {
+                    return {
+                        text: d.site.replace('www.', ''),
+                        size: Math.min(maxSize, minSize + d.frequency * scaleFactor),
+                        rotate: 0,
+                        opacity: 0.5 + (d.site_freq || 0. * 0.7),
+                        colour: d.site_cat,
+                        href: d.url,
+                        category: d.category,
+                    };
+                }))
+                .padding(3)
+                .rotate(function (d) { return 0 })
+                .font("Impact")
+                .fontSize(function (d) { return d.size; })
+                .on("end", draw);
+
+            layout.start();
+
+            function draw(words) {
+                d3.select('#tag_cloud')
+                    .append("g")
+                    .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+                    .selectAll("text")
+                    .data(words)
+                    .enter().append("text")
+                    .style("font-size", function (d) { return d.size + "px"; })
+                    .style("font-family", "Helvetica")
+                    .style("fill", function (d) { return d.colour })
+                    .attr("class", function (d) { return "category-" + sanitiseCategory(d.category) })
+                    .attr("opacity", function (d) { return d.opacity })
+                    .attr("text-anchor", "middle")
+                    .attr("transform", function (d) {
+                        return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+                    })
+                    .insert('a')
+                    .attr("href", function (d) { return d.href })
+                    .text(function (d) { return d.text; });
+            }
+        }
+
+        var activeCategories = [];
+
+        function toggleTagCloudCategory(cat) {
+            if (cat === "all") {
+                // unselect buttons
+                activeCategories.forEach(function(otherCat) {
+                    document.getElementById('button-' + otherCat).classList.remove('active');
+                });
+                document.getElementById('button-all').classList.add('active');
+                // make everything visible
+                d3.selectAll("#tag_cloud text").style("visibility", "visible");
+                activeCategories = [];
+            } else {
+                document.getElementById('button-all').classList.remove('active');
+                document.getElementById('button-' + cat).classList.add('active');
+
+                if (activeCategories.length === 0) {
+                    // hide everything
+                    d3.selectAll("#tag_cloud text").style("visibility", "hidden");
+                }
+                // make just elements from specified categories visible
+                d3.selectAll("#tag_cloud text.category-" + sanitiseCategory(cat)).style("visibility", "visible");
+                activeCategories.push(cat);
+            }
+        }
+    </script>
+
+
+<ul class="nav nav-tabs">
+    <li class="active" id="button-all">
+        <a href="#all" onclick="toggleTagCloudCategory('all')">Show all</a>
+    </li>
+    
+        
+    
+        
+            <li id="button-Business">
+                <a href="#Business" onclick="toggleTagCloudCategory('Business')">Business</a>
+            </li>
+        
+    
+        
+            <li id="button-E-Commerce">
+                <a href="#E-Commerce" onclick="toggleTagCloudCategory('E-Commerce')">E-commerce</a>
+            </li>
+        
+    
+        
+            <li id="button-Entertainment">
+                <a href="#Entertainment" onclick="toggleTagCloudCategory('Entertainment')">Entertainment</a>
+            </li>
+        
+    
+        
+            <li id="button-News and Portals">
+                <a href="#News and Portals" onclick="toggleTagCloudCategory('News and Portals')">News and portals</a>
+            </li>
+        
+    
+        
+            <li id="button-Reference">
+                <a href="#Reference" onclick="toggleTagCloudCategory('Reference')">Reference</a>
+            </li>
+        
+    
+</ul>
+
+<div class="tab-content">
+    <div id="tag_cloud_container" class="tab-pane fade in active">
+        <svg id="tag_cloud" height=400></svg>
+        <script>drawTagCloud('all', '[{"category": "Business", "frequency": 0.26882341199581616, "site": "imagetwist.com", "site_cat": "blue", "site_freq": 0.9783203636277099, "url": "../websites/imagetwist.com.html"}, {"category": "", "frequency": 0.02651615022240415, "site": "hespress.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.02048707734816084, "site": "clip16.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.019525826033069987, "site": "livetvcdn.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.016543985218910606, "site": "tata.to", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.016203950740102956, "site": "celebmafia.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.010652233961108844, "site": "morazzia.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.009148235304844243, "site": "xmissy.nl", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00846162722263649, "site": "cb01.zone", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.006650289710526515, "site": "babesandgirls.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.006467194221937781, "site": "myhotzpic.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.006421420349790598, "site": "k-streaming.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00636910735305096, "site": "zonegfx.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.006271020484164138, "site": "rlsbb.ru", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.006231785736609409, "site": "e-radio.gr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0061075423693527685, "site": "topgfx.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.005800203513507394, "site": "cricfree.sc", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0052312996739638275, "site": "juzaphoto.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.004910882568933543, "site": "hawtcelebs.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.004773560952491993, "site": "pornfree.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.004485839470423982, "site": "filmstreamvk.co", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00438775260153716, "site": "zenptp.fr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.004302743981835248, "site": "sport365.live", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0038973182571030514, "site": "series-en-streaming.xyz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003877700883325687, "site": "sexykittenporn.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0038057705128086844, "site": "click-cpm.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003596518525850131, "site": "freetvstream.in", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003583440276665222, "site": "midilibre.fr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0035115099061482193, "site": "vercanalestv.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0034722751585934903, "site": "full-serie.biz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.003452657784816126, "site": "minecraft-texture-packs.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0034395795356312164, "site": "suprafiles.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0033872665388915784, "site": "full-stream.nu", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0031322406797858414, "site": "4macsoft.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0031060841814160227, "site": "bunalti.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0029883799387518365, "site": "spycock.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002916449568234834, "site": "opposition24.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0027725888272008285, "site": "1xstream.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0027398932042385546, "site": "voirfilms.ws", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00272027583046119, "site": "comicsmanics.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002667962833721552, "site": "extremevidztube.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0025894933386120945, "site": "hentaisun.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002491406469725273, "site": "xvidstage.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.002367163102468632, "site": "blackcompanymanga.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0023540848532837225, "site": "xxxaporn.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0022886936073591743, "site": "myp1p.eu", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0020990589941779856, "site": "extratorrent.cd", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001994433000698709, "site": "tele-wizja.is", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00196827650232889, "site": "full-stream.live", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0019551982531439806, "site": "xxgasm.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0019486591285515257, "site": "ovagames.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001791720138332611, "site": "usagoals.me", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001791720138332611, "site": "firstrowi.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0017655636399627917, "site": "avgle.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0016870941448533343, "site": "xmodels.trade", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00166747677107597, "site": "yopika.info", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0016151637743363318, "site": "toolsmv.site", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0016086246497438769, "site": "xinature.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0015890072759665126, "site": "yopriceville.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001575929026781603, "site": "official-film-illimite.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0015039986562646003, "site": "hotshow.pw", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0014974595316721456, "site": "koaci.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0014909204070796909, "site": "nicecloseups.bid", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0014778421578947813, "site": "xangels.trade", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0014451465349325074, "site": "hellodear.win", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0014451465349325074, "site": "u-15.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0014386074103400525, "site": "akhbar-rooz.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0013862944136004143, "site": "youtop.men", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0013078249184909569, "site": "mypornguy.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001275129295528683, "site": "vavvi.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0012620510463437734, "site": "lapressegalactique.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0012489727971588638, "site": "gum-gum-streaming.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.001242433672566409, "site": "mardomreport.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0012358945479739542, "site": "findlips.ru", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "News and Portals", "frequency": 0.0012162771741965899, "site": "livetv.sx", "site_cat": "#000", "site_freq": 0.015576584875638556, "url": "../websites/livetv.sx.html"}, {"category": "", "frequency": 0.0012162771741965899, "site": "streamiz-filmze.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0011770424266418613, "site": "javopen.co", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0011639641774569517, "site": "open-live.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0011639641774569517, "site": "putlocker.co", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0011181903053097682, "site": "topreplay.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0011051120561248586, "site": "mo9999.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0011051120561248586, "site": "cumception.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0010724164331625847, "site": "wawa-mania.xyz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0010658773085701297, "site": "tokyomotion.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0010527990593852204, "site": "nudeta.ml", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0010462599347927655, "site": "firstrows.xyz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0010462599347927655, "site": "animalslook.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0010266425610154012, "site": "barbiedoll.site", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009874078134606723, "site": "gomovies.co", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000967790439683308, "site": "torrentfunk.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009481730659059438, "site": "qpress.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009285556921285793, "site": "eddirasa.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009220165675361245, "site": "nudistsamateurpics.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009154774429436697, "site": "123putlocker.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009023991937587602, "site": "lshunter.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0009023991937587602, "site": "dpstreaming.cc", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008958600691663054, "site": "telecharger-musique-gratuit.ws", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008827818199813958, "site": "growingup.fun", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000876242695388941, "site": "ausmalbilder-malvorlagen.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.000876242695388941, "site": "topanalyse.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008697035707964863, "site": "0dt.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008566253216115767, "site": "poppytool.xyz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008370079478342123, "site": "downyoutubemp4.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0008239296986493028, "site": "filmisub.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007912340756870289, "site": "littlebreepics.ru", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007585384527247549, "site": "party-ratgeber.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007519993281323001, "site": "tmearn.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007454602035398454, "site": "softasm.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007389210789473906, "site": "xteenchan.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007323819543549358, "site": "pornbeu.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0007062254559851167, "site": "bteye.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006996863313926619, "site": "cloudyfiles.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006996863313926619, "site": "streamhd.eu", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006800689576152975, "site": "bigtitsgallery.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006735298330228427, "site": "streaming-foot.xyz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006473733346530236, "site": "maniacosporcomics.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006408342100605688, "site": "ronaldo7.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006408342100605688, "site": "secretxgalls.pw", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006277559608756593, "site": "freeadultcomix.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006212168362832045, "site": "stream2watch.cc", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0006081385870982949, "site": "livewidget.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0005885212133209306, "site": "gayteenlove.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0004969734690265636, "site": "dvervkvartiru.ru", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0004773560952491992, "site": "papystreaming-hd.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0004773560952491992, "site": "milfcomix.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0003596518525850131, "site": "silkengirl.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00034657360340010357, "site": "myp2p.sx", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0003204171050302844, "site": "thehun.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00031387798043782967, "site": "pes-patch.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00030079973125292006, "site": "ptc-community.fr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002942606066604653, "site": "mytubes.xyz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002811823574755557, "site": "myfeed2all.eu", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002746432328831009, "site": "drakulastream.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002746432328831009, "site": "babesinporn.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00026156498369819136, "site": "goatdee.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00025502585910573656, "site": "pornleech.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002157911115510079, "site": "neobux.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002157911115510079, "site": "beinsport-streaming.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0002157911115510079, "site": "maxifoot.fr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00018963461318118873, "site": "czech3x.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Reference", "frequency": 0.00018963461318118873, "site": "bing.com", "site_cat": "#E0EEEE", "site_freq": null, "url": "../websites/bing.com.html"}, {"category": "", "frequency": 0.00018963461318118873, "site": "altervista.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00018309548858873396, "site": "neteuros.fr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00017655636399627918, "site": "futbolcafetv2.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0001634781148113696, "site": "dailyuploads.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00015039986562646003, "site": "btcclicks.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00014386074103400526, "site": "rockfile.co", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00013732161644155046, "site": "buxcure.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.0001242433672566409, "site": "av4.xyz", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00011116511807173133, "site": "amf.land", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00011116511807173133, "site": "sis-handball.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 0.00011116511807173133, "site": "xkeezmovies.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Reference", "frequency": 0.00010462599347927654, "site": "google.de", "site_cat": "#E0EEEE", "site_freq": null, "url": "../websites/google.de.html"}, {"category": "", "frequency": 0.00010462599347927654, "site": "mainbabes.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 9.808686888682177e-05, "site": "infinitytrafficboost.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 9.808686888682177e-05, "site": "animes-stream24.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 9.154774429436698e-05, "site": "raidrush.ws", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "News and Portals", "frequency": 8.500861970191219e-05, "site": "lemonde.fr", "site_cat": "#000", "site_freq": null, "url": "../websites/lemonde.fr.html"}, {"category": "", "frequency": 8.500861970191219e-05, "site": "xmoviesforyou.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.500861970191219e-05, "site": "w3adz.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.500861970191219e-05, "site": "hit4hit.org", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.500861970191219e-05, "site": "mega-ptc.fr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 8.500861970191219e-05, "site": "buxcap.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 7.193037051700263e-05, "site": "educadegree.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 7.193037051700263e-05, "site": "vipbox.nu", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 7.193037051700263e-05, "site": "loseturbo.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 6.539124592454784e-05, "site": "pron.tv", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 6.539124592454784e-05, "site": "cashtravel.info", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 6.539124592454784e-05, "site": "clixunion.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.885212133209306e-05, "site": "alluc.ee", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.885212133209306e-05, "site": "euros-4-mails.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.231299673963827e-05, "site": "vstitorrent.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.231299673963827e-05, "site": "turbo-mails.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 5.231299673963827e-05, "site": "nightingale-ads.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.577387214718349e-05, "site": "elbotola.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 4.577387214718349e-05, "site": "bitcofarm.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.923474755472871e-05, "site": "worthclix.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.923474755472871e-05, "site": "network54.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.923474755472871e-05, "site": "uniclique.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Entertainment", "frequency": 3.923474755472871e-05, "site": "myvidster.com", "site_cat": "#B8B8B8", "site_freq": null, "url": "../websites/myvidster.com.html"}, {"category": "", "frequency": 3.923474755472871e-05, "site": "aticlix.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.269562296227392e-05, "site": "cpmlink.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.269562296227392e-05, "site": "powermails.de", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.269562296227392e-05, "site": "bitcomine.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.269562296227392e-05, "site": "metodoflow.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.269562296227392e-05, "site": "cliquebook.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.269562296227392e-05, "site": "guruclix.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 3.269562296227392e-05, "site": "googleusercontent.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 2.6156498369819136e-05, "site": "indexclix.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Reference", "frequency": 2.6156498369819136e-05, "site": "ask.com", "site_cat": "#E0EEEE", "site_freq": null, "url": "../websites/ask.com.html"}, {"category": "", "frequency": 2.6156498369819136e-05, "site": "microsofttranslator.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Reference", "frequency": 2.6156498369819136e-05, "site": "google.com", "site_cat": "#E0EEEE", "site_freq": null, "url": "../websites/google.com.html"}, {"category": "", "frequency": 2.6156498369819136e-05, "site": "shwidget.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "E-Commerce", "frequency": 2.6156498369819136e-05, "site": "ebay.de", "site_cat": "#71C671", "site_freq": null, "url": "../websites/ebay.de.html"}, {"category": "", "frequency": 2.6156498369819136e-05, "site": "familyclix.com", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "Entertainment", "frequency": 1.9617373777364354e-05, "site": "hdfilme.tv", "site_cat": "#B8B8B8", "site_freq": null, "url": "../websites/hdfilme.tv.html"}, {"category": "", "frequency": 1.9617373777364354e-05, "site": "castorama.fr", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.9617373777364354e-05, "site": "live9.co", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.9617373777364354e-05, "site": "wiz1.net", "site_cat": "#000", "site_freq": 0.0, "url": null}, {"category": "", "frequency": 1.9617373777364354e-05, "site": "genti.stream", "site_cat": "#000", "site_freq": 0.0, "url": null}]')</script>
+    </div>
+
+</div>
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+    
+
+    
+    <div class="breadcrumb-bar" style="border-bottom: solid 1px #333;">
+    
+        <div class="container">
+                <ul class="breadcrumb">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/trackers.html">Trackers</a></li>
+                    
+                        <li>Histats</li>
+                    
+                </ul>
+        </div>
+    </div>
+    
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12 menu">
+                <a target="_blank" href="https://cliqz.com/en/about">
+                    About
+                </a>
+                <span class="divisor">&#x2027;</span> 
+                <a target="_blank" href="https://cliqz.com/en/about/careers">
+                    Careers
+                </a>
+                <span class="divisor">&#x2027;</span> 
+                <a target="_blank" href="https://cliqz.com/en/download">
+                    Cliqz browser
+                </a>
+                <span class="divisor">&#x2027;</span> 
+                <a target="_blank" href="https://www.ghostery.com/en/products/">
+                    Ghostery add-on
+                </a>
+                <span class="divisor">&#x2027;</span>              
+                <i class="fa fa fa-github"></i>
+                <a target="_blank" rel="noreferrer" href="https://github.com/cliqz-oss/whotracks.me">
+                     Get the data
+                </a>                
+                <div class="copyright">
+                    &copy; Cliqz 2017 - All rights reserved
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-12 logos">
+                <a href="https://cliqz.com/en/"
+                    target="_blank">
+                    <span class="cliqz-logo"></span>
+                </a>
+                <a href="https://www.ghostery.com/"
+                   target="_blank">
+                    <span class="ghostery-logo"></span>
+                </a>                             
+            </div>        
+        </div>
+    </div>  
+    
+    <!-- Local javascript modules -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.easy-autocomplete.js"></script>
+    <script type="text/javascript" src="../static/js/search-bar.js"></script>    
+    
+</footer>
+<!-- END OF FOOTER -->
